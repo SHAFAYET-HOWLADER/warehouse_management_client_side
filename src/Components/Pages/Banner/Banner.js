@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
-import banner_one from '../../../banner_img/banner_one.jpg'
-import banner_two from '../../../banner_img/banner_two.jpg'
-import banner_three from '../../../banner_img/banner_three.jpg'
+import banner_one from '../../../banner_img/banner_one.jpg';
+import banner_two from '../../../banner_img/banner_two.jpg';
+// import banner_three from '../../../banner_img/banner_three.jpg';
+import banner_four from '../../../banner_img/banner_four.jpg';
 
 const Banner = () => {
     const [index, setIndex] = useState(0);
@@ -55,7 +56,7 @@ const Banner = () => {
                             objectFit: 'cover'
                         }}
                             className="d-block w-100"
-                            src={banner_three}
+                            src={banner_four}
                             alt="Third slide"
                         />
 

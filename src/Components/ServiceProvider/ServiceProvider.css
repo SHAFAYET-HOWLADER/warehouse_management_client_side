@@ -1,0 +1,41 @@
+
+#serviceProvider{
+    padding: 100px 0px;
+}
+.section_space{
+    padding: 0px 40px;
+}
+.serviceProvider_left h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    position: relative;
+}
+.serviceProvider_left h3::after{
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 100px;
+    background-color: #BEAEE2;
+    left: 0;
+    bottom: -15px;
+}
+.serviceProvider_left p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: justify;
+    padding-top: 30px;
+}
+.serviceProvider_left button{
+    border: none;
+    padding: 10px 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #BEAEE2;
+    border-radius: 3px;
+}
+.serviceProvider_left span{
+    color: #BEAEE2;
+}
