@@ -1,6 +1,5 @@
 
 #footer{
-    padding: 50px 0px;
     background-color: #000;
     color: #d1d1d1;
 }
@@ -14,7 +13,7 @@
     font-weight: 600;
     font-family: 'Source Sans Pro', sans-serif;
 }
-.footer_text p{
+.footer_text p, .copy small{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -25,5 +24,13 @@
     list-style-type: none;
 }
 .footer_space{
-    padding: 0px 20px;
+    padding: 0px 10px;
+}
+#copy{
+    border-top: 1px  solid #BEAEE2;
+    padding: 20px 0px;
+}
+#copy small{
+    display: inline-block;
+    width: 100%;
 }

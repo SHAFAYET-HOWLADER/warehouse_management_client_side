@@ -28,9 +28,9 @@ const OurServices = () => {
                                         On-Demand Warehousing Space Services
                                     </h3>
                                     <button>
-                                        Read Now
+                                        More-Info
                                         &nbsp;
-                                        <FaArrowRight/>
+                                        <FaArrowRight />
                                     </button>
                                 </div>
                             </div>
@@ -43,9 +43,9 @@ const OurServices = () => {
                                         Kitting, Packing and Other Customized Operation
                                     </h3>
                                     <button>
-                                        Read Now
+                                        More-Info
                                         &nbsp;
-                                        <FaArrowRight/>
+                                        <FaArrowRight />
                                     </button>
                                 </div>
                             </div>
@@ -55,12 +55,12 @@ const OurServices = () => {
                                 <img className='img-fluid w-100' src={service_three} alt='img' />
                                 <div className='img_text text-center'>
                                     <h3>
-                                    Distribution and Reverse Logistics
+                                        Distribution and Reverse Logistics
                                     </h3>
                                     <button>
-                                        Read Now
+                                        More-Info
                                         &nbsp;
-                                        <FaArrowRight/>
+                                        <FaArrowRight />
                                     </button>
                                 </div>
                             </div>
@@ -70,12 +70,12 @@ const OurServices = () => {
                                 <img className='img-fluid w-100' src={service_four} alt='img' />
                                 <div className='img_text text-center'>
                                     <h3>
-                                    Value Added Services
+                                        Value Added Services
                                     </h3>
                                     <button>
-                                        Read Now
+                                        More-Info
                                         &nbsp;
-                                        <FaArrowRight/>
+                                        <FaArrowRight />
                                     </button>
                                 </div>
                             </div>
