@@ -1,0 +1,38 @@
+#books {
+    padding: 100px 0px;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.section_title h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+.section_title h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: #BEAEE2;
+    position: relative;
+    display: inline-block;
+}
+.section_title h3::after{
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 100px;
+    background-color: #BEAEE2;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+}
+.section_title p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 30px;
+}

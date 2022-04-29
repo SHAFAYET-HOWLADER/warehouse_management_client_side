@@ -1,0 +1,40 @@
+
+.displayBooks img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.displayBooks h5{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.displayBooks small{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    width: 280px;
+    display: inline-block;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+.books_text {
+    border: 1px solid #BEAEE2;
+    padding: 15px 10px;
+}
+.books_text button{
+    border: none;
+    padding: 5px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: #F7DBF0;
+    border-radius: 3px;
+}
+.displayBooks{
+    margin:  15px;
+}
+.displayBooks:hover .books_text{
+    box-shadow: 9px 9px 22px -16px #000;
+    transition: all linear .4s;
+  }
