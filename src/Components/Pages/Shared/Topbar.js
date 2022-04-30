@@ -1,10 +1,17 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import CustomLink from '../../CustomLink/CustomLink';
+import { signOut } from 'firebase/auth';
 import logo from '../../../logo/book_logo.png';
 import './Topbar.css'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
 
 const Topbar = () => {
+    const [user] = useAuthState(auth);
+    const logout = () => {
+        signOut(auth);
+    };
     return (
         <div className='index'>
             <Navbar collapseOnSelect expand="lg" style={{
@@ -20,17 +27,21 @@ const Topbar = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <CustomLink  to="/inventory">Inventory</CustomLink>
+                            <CustomLink to="/inventory">Inventory</CustomLink>
                         </Nav>
                         <Nav>
-                            <CustomLink  to="/login">Login </CustomLink>
-                            <CustomLink  to="/blog">
+                            {
+                                user ?
+                                    <button onClick={logout} >SignOut </button>
+                                    : <CustomLink to="/login">Login </CustomLink>
+                            }
+                            <CustomLink to="/blog">
                                 Blog
                             </CustomLink>
-                            <CustomLink  to="/about">
+                            <CustomLink to="/about">
                                 About
                             </CustomLink>
-                            <CustomLink  to="/contact">
+                            <CustomLink to="/contact">
                                 Contact
                             </CustomLink>
                         </Nav>
