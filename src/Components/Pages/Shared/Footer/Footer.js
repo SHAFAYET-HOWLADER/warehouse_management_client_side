@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
             <section id='copy'>
                 <div className='container text-center'>
-                    <small>All right reserved &copy; storedProduct @ warehouse {year} </small>
+                    <small>All right reserved&copy;storedProduct@warehouse {year} </small>
                 </div>
             </section>
         </section>
