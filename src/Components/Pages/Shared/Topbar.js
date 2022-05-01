@@ -16,6 +16,8 @@ const Topbar = () => {
         <div className='index'>
             <Navbar collapseOnSelect expand="lg" style={{
                 backgroundColor: '#F7DBF0'
+
+
             }}>
                 <Container>
                     <CustomLink to="/home">

@@ -17,7 +17,7 @@ const Register = () => {
         registerLoading,
         registerError,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
-    const [updateProfile, updateError] = useUpdateProfile(auth);
+    const [updateProfile] = useUpdateProfile(auth);
     let regError;
     if (registerError) {
         regError = <p className='text-danger'>Error: {registerError.message}</p>
@@ -26,7 +26,7 @@ const Register = () => {
         return <Loading />;
     }
     if (registerUser) {
-        console.log(registerUser)
+        navigate('/home')
     }
 
     const signUpHandler = async (event) => {
@@ -36,7 +36,7 @@ const Register = () => {
         const password = event.target.password.value;
         const confirmPassword = event.target.confirm.value;
         if (password !== confirmPassword) {
-            toast("Password doesn't match")
+            toast("Password doesn't match");  
             return;
         }
         await createUserWithEmailAndPassword(email, password, confirmPassword)
