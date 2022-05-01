@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
@@ -13,6 +13,8 @@ const Login = () => {
     const emailRef = useRef('')
     const passwordRef = useRef('')
     const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state.from.pathname || '/';
     const [
         signInWithEmailAndPassword,
         loginUser,
@@ -28,9 +30,7 @@ const Login = () => {
         return <Loading />;
     }
     if (loginUser) {
-        navigate('/home')
-        toast('Successfully login')
-        console.log(loginUser)
+        navigate(from, {replace: true})
     }
     const loginHandler = async (event) => {
         event.preventDefault();

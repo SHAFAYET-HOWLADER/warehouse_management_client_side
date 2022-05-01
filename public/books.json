@@ -5,7 +5,7 @@
         "img": "https://i.ibb.co/H4m8nKP/book-six.jpg",
         "description": "This work, 'Hide and Seek', is a derivative of 'Hide and Seek' written by All Children Reading Cambodia. © The Asia Foundation 2019, and used under CC BY. 'Hide and Seek' is licensed under CC BY 4.0 by Curious Learning.",
         "price": "$50",
-        "quantity": 50,
+        "quantity": "50pcs",
         "supplierName": "Rokomari"
     },
     {
@@ -14,7 +14,7 @@
         "img": "https://i.ibb.co/TRSWDtB/book-one.png",
         "description": "Napoleon Hill interviewed '40 millionaires' to discover the common thought processes and behaviors that had led to their success. His study of these 'best practices' was revolutionary in a world where it was largely assumed that great wealth resulted from a combination of greed and luck.",
         "price": "$40",
-        "quantity": 30,
+        "quantity": "30pcs",
         "supplierName": "Daraz"
     },
     {
@@ -23,7 +23,7 @@
         "img": "https://i.ibb.co/kx4X8jC/book-three.jpg",
         "description": "Far more than just a sales book, Og Mandino's faux-biblical parable encourages you to live your life to the fullest by believing in yourself and your ability to help others. Required reading for anybody who sells. Which is just about everybody.",
         "price": "$30",
-        "quantity": 30,
+        "quantity": "30pcs",
         "supplierName": "BookShopBD"
     },
     {
@@ -32,7 +32,7 @@
         "img": "https://i.ibb.co/MDMn3H2/book-four.jpg",
         "description": "This book cover is one of many given to Harper Lee's classic work To Kill a Mockingbird (1960). The novel won a Pulitzer Prize in 1961 and the next year was made into an Academy Award-winning film.",
         "price": "$20",
-        "quantity": 100,
+        "quantity": "100pcs",
         "supplierName": "BoiBoiBoi"
     },
     {
@@ -41,7 +41,7 @@
         "img": "https://i.ibb.co/TrYXwsh/book-five.jpg",
         "description": "About the bookthe power of positive thinking was birthed due to peale's concern for the pain faced by mankind, providing the readers with tools and techniques to bring about peace of mind.",
         "price": "$60",
-        "quantity": 1000,
+        "quantity": "1000pcs",
         "supplierName": "BoiBoiBoi"
     },
     {
@@ -50,7 +50,7 @@
         "img": "https://i.ibb.co/3dffhNv/book-two.jpg",
         "description": "The Isle of Lewis, one of the largest and most northerly of Scotland’s Outer Hebrides islands, is isolated geographically and culturally, being governed by the only local council in Scotland to have changed its name to Gaeli",
         "price": "$100",
-        "quantity": 300,
+        "quantity": "300pcs",
         "supplierName": "BoiBoiBoi"
     }
 ]
