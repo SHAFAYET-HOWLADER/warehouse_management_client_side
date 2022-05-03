@@ -5,7 +5,7 @@ import './Inventory.css'
 const Inventory = () => {
     const [books, setBooks] = useState([])
     useEffect(() => {
-        fetch('books.json')
+        fetch('http://localhost:5000/inventory')
             .then(res => res.json())
             .then(data => setBooks(data))
     }, [])
@@ -19,7 +19,7 @@ const Inventory = () => {
             <div className='container book'>
                 {
                     books.map(book => <DisplayBooks
-                        key={book.id}
+                        key={book._id}
                         book={book}
                     />)
                 }
