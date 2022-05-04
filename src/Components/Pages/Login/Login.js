@@ -10,11 +10,11 @@ import { toast, ToastContainer } from 'react-toastify';
 
 
 const Login = () => {
-    const emailRef = useRef('')
-    const passwordRef = useRef('')
     const navigate = useNavigate();
     const location = useLocation();
-    const from = location.state.from.pathname || '/';
+    const emailRef = useRef('')
+    const passwordRef = useRef('')
+    const from = location.state?.from?.pathname || '/';
     const [
         signInWithEmailAndPassword,
         loginUser,

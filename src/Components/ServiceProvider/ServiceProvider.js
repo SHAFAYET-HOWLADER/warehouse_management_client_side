@@ -6,7 +6,7 @@ const ServiceProvider = () => {
     return (
         <section id="serviceProvider">
             <div className='container'>
-                <row>
+      
                    <div className='d-flex'>
                    <div className='col-lg-6'>
                        <div className='serviceProvider_left section_space'>
@@ -30,7 +30,7 @@ const ServiceProvider = () => {
                         </div>
                     </div>
                    </div>
-                </row>
+          
             </div>
         </section>
     );

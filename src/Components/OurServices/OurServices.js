@@ -18,7 +18,7 @@ const OurServices = () => {
                         supply chain operations and services
                     </p>
                 </div>
-                <row>
+              
                     <div className='service_items d-flex  justify-content-center'>
                         <div className='col-lg-3'>
                             <div className='services_img'>
@@ -81,7 +81,7 @@ const OurServices = () => {
                             </div>
                         </div>
                     </div>
-                </row>
+               
             </div>
         </section>
     );
