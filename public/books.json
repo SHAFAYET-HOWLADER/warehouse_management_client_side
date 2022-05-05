@@ -3,7 +3,7 @@
         "bookName": "Hide And Seek(EN)",
         "img": "https://i.ibb.co/H4m8nKP/book-six.jpg",
         "description": "This work, 'Hide and Seek', is a derivative of 'Hide and Seek' written by All Children Reading Cambodia. © The Asia Foundation 2019, and used under CC BY. 'Hide and Seek' is licensed under CC BY 4.0 by Curious Learning.",
-        "price": "$50",
+        "price": "$70",
         "quantity": 5500,
         "supplierName": "Rokomari"
     },
@@ -11,7 +11,7 @@
         "bookName": "Think and Grow Rich",
         "img": "https://i.ibb.co/TRSWDtB/book-one.png",
         "description": "Napoleon Hill interviewed '40 millionaires' to discover the common thought processes and behaviors that had led to their success. His study of these 'best practices' was revolutionary in a world where it was largely assumed that great wealth resulted from a combination of greed and luck.",
-        "price": "$40",
+        "price": "$45",
         "quantity": 5000,
         "supplierName": "Daraz"
     },
@@ -27,7 +27,7 @@
         "bookName": "To Kill a Mockingbird",
         "img": "https://i.ibb.co/MDMn3H2/book-four.jpg",
         "description": "This book cover is one of many given to Harper Lee's classic work To Kill a Mockingbird (1960). The novel won a Pulitzer Prize in 1961 and the next year was made into an Academy Award-winning film.",
-        "price": "$20",
+        "price": "$50",
         "quantity": 11000,
         "supplierName": "BoiBoiBoi"
     },
@@ -43,7 +43,7 @@
         "bookName": "The Blackhouse",
         "img": "https://i.ibb.co/3dffhNv/book-two.jpg",
         "description": "The Isle of Lewis, one of the largest and most northerly of Scotland’s Outer Hebrides islands, is isolated geographically and culturally, being governed by the only local council in Scotland to have changed its name to Gaeli",
-        "price": "$1100",
+        "price": "$110",
         "quantity": 3000,
         "supplierName": "BoiBoiBoi"
     }

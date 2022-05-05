@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from 'react';
+
+import useInventory from '../Hooks/useInventory';
 import DisplayBooks from './DisplayBooks/DisplayBooks';
 import './Inventory.css'
 const Inventory = () => {
-    const [books, setBooks] = useState([])
-    useEffect(() => {
-        fetch('http://localhost:5000/inventory')
-            .then(res => res.json())
-            .then(data => setBooks(data))
-    }, [])
+    const [books] = useInventory();
     return (
         <section id="books">
             <div className='services_title text-center'>

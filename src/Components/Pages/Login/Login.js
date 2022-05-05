@@ -30,7 +30,7 @@ const Login = () => {
         return <Loading />;
     }
     if (loginUser) {
-        navigate(from, {replace: true})
+        navigate(from, {replace: true});
     }
     const loginHandler = async (event) => {
         event.preventDefault();

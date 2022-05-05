@@ -16,8 +16,6 @@ const Topbar = () => {
         <div className='index'>
             <Navbar collapseOnSelect expand="lg" style={{
                 backgroundColor: '#F7DBF0'
-
-
             }}>
                 <Container>
                     <CustomLink to="/home">
@@ -32,6 +30,12 @@ const Topbar = () => {
                             <CustomLink to="/inventory">Inventory</CustomLink>
                         </Nav>
                         <Nav>
+                            {
+                                user && <>
+                                    <CustomLink to="/addBook">Add Book</CustomLink>
+                                    <CustomLink to="/manageBooks">Manage</CustomLink>
+                                </>
+                            }
                             {
                                 user ?
                                     <button onClick={logout} >SignOut </button>

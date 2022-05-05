@@ -2,25 +2,26 @@ import { useNavigate } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 import './DisplayBooks.css'
 const DisplayBooks = ({ book }) => {
-    const { bookName, img, description, price, quantity,_id } = book;
+    const { bookName, img, description, price, quantity, _id,supplierName } = book;
     const navigate = useNavigate()
-    const navigateToDetails = (id)=>{
+    const navigateToDetails = (id) => {
         navigate(`/inventory/${id}`)
     }
     return (
-       <section>
+        <section>
             <div className='displayBooks'>
-            <img src={img} alt='books_img' />
-            <div className='books_text'>
-                <h5>{bookName}</h5>
-                <h5>In Stock : {parseInt(quantity)}</h5>
-                <h4>{price}</h4>
-                <small> <strong><u>Book-Info :</u></strong>  {description.slice(0, 200)}</small>
-                <br />
-                <button onClick={()=>navigateToDetails(_id)}>Update &nbsp; <FaArrowRight/>  </button>
+                <img src={img} alt='books_img' />
+                <div className='books_text'>
+                    <h5>{bookName}</h5>
+                    <h5>Supplier : {supplierName}</h5>
+                    <h5>In Stock : {quantity}</h5>
+                    <h4>{price}</h4>
+                    <small> <strong><u>Book-Info :</u></strong>  {description}</small>
+                    <br />
+                    <button onClick={() => navigateToDetails(_id)}>Update &nbsp; <FaArrowRight />  </button>
+                </div>
             </div>
-        </div>
-       </section>
+        </section>
     );
 };
 export default DisplayBooks;

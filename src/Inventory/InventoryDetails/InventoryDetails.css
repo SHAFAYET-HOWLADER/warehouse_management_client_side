@@ -1,0 +1,16 @@
+
+.updateArea input:focus{
+    outline: none;
+}
+.updateArea input:not([type=checkbox]){
+    display: block;
+    border: 1px solid transparent;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 15px 0px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgba(247, 219, 240, 0.239);
+}
