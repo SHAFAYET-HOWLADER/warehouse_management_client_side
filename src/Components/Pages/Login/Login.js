@@ -7,6 +7,7 @@ import auth from '../../../firebase.init';
 import Loading from '../Shared/Loading/Loading';
 import { async } from '@firebase/util';
 import { toast, ToastContainer } from 'react-toastify';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 
 const Login = () => {
@@ -66,6 +67,7 @@ const Login = () => {
                     <small>New to storedProduct? <Link to='/register'>Sign Up here&nbsp; <FaArrowRight /> </Link></small>
                 </div>
                 <ToastContainer/>
+                <SocialLogin/>
             </div>
         </section>
     );

@@ -1,0 +1,92 @@
+.signIn {
+    background-color: #F7DBF0;
+    width: 20%;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 10px;
+    margin: 0px 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.socialSignIn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.signIn img {
+    height: 30px;
+    width: 30px;
+}
+
+.signIn small {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+/*<-----apply media query-------->*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .socialSignIn {
+        flex-direction: column;
+    }
+    .signIn {
+        width: 35%;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .socialSignIn {
+        display: flex;
+        flex-direction: column;
+    }
+    .signIn {
+        width: 40%;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .signIn img {
+        height: 25px;
+        width: 25px;
+    }
+    
+    .signIn small {
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .socialSignIn {
+        flex-direction: column;
+    }
+    .signIn {
+        width: 50%;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .socialSignIn {
+        flex-direction: column;
+    }
+    .signIn {
+        width: 50%;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .signIn img {
+        height: 25px;
+        width: 25px;
+    }
+    
+    .signIn small {
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+/*<-----apply media query-------->*/

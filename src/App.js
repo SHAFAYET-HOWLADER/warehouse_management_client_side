@@ -14,6 +14,7 @@ import Inventory from './Inventory/Inventory';
 import InventoryDetails from './Inventory/InventoryDetails/InventoryDetails';
 import AddBook from './Components/Pages/AddBook/AddBook';
 import ManageBook from './Components/Pages/ManageBook/ManageBook';
+import RequireAuth from './RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -27,19 +28,19 @@ function App() {
         <Route path='/home' element={<Home />}></Route>
         <Route path='/inventory' element={<Inventory />}></Route>
         <Route path='/inventory/:inventoryId' element={
-        
+          <RequireAuth>
             <InventoryDetails />
-         
+          </RequireAuth>
         }></Route>
         <Route path='/manageBooks' element={
-         
-            <ManageBook/>
-         
+          <RequireAuth>
+            <ManageBook />
+          </RequireAuth>
         }></Route>
         <Route path='/addBook' element={
-         
-           <AddBook/>
-         
+          <RequireAuth>
+            <AddBook />
+          </RequireAuth>
         }></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/register' element={<Register />}></Route>

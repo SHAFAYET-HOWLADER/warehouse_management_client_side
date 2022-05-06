@@ -35,7 +35,7 @@ const InventoryDetails = () => {
             .then(data => {
                 event.target.reset();
                 setReload(!reLoad);
-                console.log("dada loaded", data)
+                toast("Successfully added quantity")
             })
 
     }
