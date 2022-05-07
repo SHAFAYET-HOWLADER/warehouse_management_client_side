@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaFacebookF, FaLinkedin, FaTwitterSquare, FaInstagram } from 'react-icons/fa';
 import "./Footer.css"
 const Footer = () => {
     const today = new Date();
@@ -11,19 +11,15 @@ const Footer = () => {
                     <div className='footer_text footer_space'>
                         <h3>About</h3>
                         <p>
-                            Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua.
-                            <br />
-                            <br />
-                            Ut Enim Ad Minim Veniam, Quis Exercitation Ullamco Laboris
-                            Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum.
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
                         </p>
                     </div>
                     <div className='footer_link footer_space'>
                         <h3>Go</h3>
-                    <p> <FaArrowRight />   &nbsp; Home</p>
-                    <p> <FaArrowRight /> &nbsp; About</p>
-                    <p> <FaArrowRight /> &nbsp; Blog</p>
-                    <p><FaArrowRight /> &nbsp; Login</p>
+                        <p> <FaArrowRight />   &nbsp; Home</p>
+                        <p> <FaArrowRight /> &nbsp; About</p>
+                        <p> <FaArrowRight /> &nbsp; Blog</p>
+                        <p><FaArrowRight /> &nbsp; Login</p>
 
                     </div>
                     <div className='footer_info footer_space'>
@@ -33,15 +29,23 @@ const Footer = () => {
                         <p>+88 01890341583 | +88 01704830855</p>
                         <p>storedProduct@Warehouse.com</p>
 
-                        <div className='social_icon'>
-
+                        <div className='social_icon pt-2'>
+                            <a target='_blank' href="https://www.facebook.com"><FaFacebookF /></a>
+                            <a target='_blank' href="https://www.linkedin.com"> <FaLinkedin /></a>
+                            <a target='_blank' href="https://www.instagram.com"><FaInstagram /></a>
+                            <a target='_blank' href="https://www.twitter.com"> <FaTwitterSquare /> </a>
                         </div>
                     </div>
-                    <div className='footer_subscribe footer_space'>
+                    <div className='footer_subscribe footer_space inputField'>
                         <h3>Subscribe</h3>
                         <p>Sign Up To Our Newsletter And Get The Latest Offers.</p>
-                        <input type="email" placeholder='your email address' required />
-                        <input type="submit" value='Got Notified' />
+                        <form>
+                            <input type="email" placeholder='Your email address' required />
+                            <input style={{
+                                fontSize: '18px',
+                                color: '#fff'
+                            }} type="submit" value='Got Notified' />
+                        </form>
                     </div>
                 </div>
             </div>

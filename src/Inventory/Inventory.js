@@ -10,7 +10,7 @@ const Inventory = () => {
         navigate('/manageInventories');
     }
     const newBooks  = books.slice(0,6);
-
+    
     return (
         <section id="books">
             <div className='container'>
@@ -32,7 +32,7 @@ const Inventory = () => {
                     }
 
                 </div>
-                <div className='manage_button'>
+                <div className='manage_button mt-5'>
                     <button onClick={navigateTomManageInventories}>Manage Inventories&nbsp;<FaArrowRight /> </button>
                 </div>
             </div>

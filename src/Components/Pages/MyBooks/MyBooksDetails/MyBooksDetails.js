@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { useNavigate, useParams } from 'react-router-dom';
-import { toast, ToastContainer } from 'react-toastify';
-import './InventoryDetails.css'
+import { toast, ToastContainer } from 'react-toastify';;
 
-const InventoryDetails = () => {
+const MyBooksDetails = () => {
     const navigate = useNavigate();
     const navigateTomManageInventories = () => {
-        navigate('/manageInventories');
+        navigate('/ManageMyBooks');
     }
-    const { inventoryId } = useParams()
+    const { myId } = useParams()
     //deliver book
     const [reLoad, setReload] = useState(false);
     const [book, setBook] = useState({})
+    console.log(book)
     useEffect(() => {
-        fetch(`http://localhost:5000/inventory/${inventoryId}`)
+        fetch(`http://localhost:5000/myBooks/${myId}`)
             .then(res => res.json())
             .then(data => setBook(data))
     }, [reLoad])
@@ -22,10 +22,10 @@ const InventoryDetails = () => {
     const addBook = (event) => {
         event.preventDefault();
         const quantity = event.target.quantity.value;
-        const newQuantity = parseInt(quantity) + parseInt(book?.quantity);
+        const newQuantity = parseInt(quantity) + parseInt(book.quantity);
         console.log(quantity, newQuantity)
         const updatedQuantity = { newQuantity };
-        const url = `http://localhost:5000/book/${inventoryId}`
+        const url = `http://localhost:5000/myBooks/${myId}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -45,7 +45,7 @@ const InventoryDetails = () => {
     const reduceQuantity = () => {
         const quantity = book?.quantity;
         const updatedQuantity = { quantity }
-        const url = `http://localhost:5000/inventory/${inventoryId}`
+        const url = `http://localhost:5000/my/${myId}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -98,4 +98,4 @@ const InventoryDetails = () => {
     );
 };
 
-export default InventoryDetails;
+export default MyBooksDetails;

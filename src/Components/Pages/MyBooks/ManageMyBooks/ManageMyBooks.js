@@ -1,26 +1,25 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
-import useInventory from '../../../Hooks/useInventory';
 import { FaRegTrashAlt,FaArrowRight,FaHandPointRight } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-
-const ManageBook = () => {
+import useMyBooks from '../../../../Hooks/useMyBooks';
+const ManageMyBooks = () => {
+    const [myBooks, setMyBooks] = useMyBooks();
     const navigate = useNavigate();
     const navigateTomManageInventories = () => {
         navigate('/addBook');
     }
-    const [books, setBooks] = useInventory();
     const handleDelete = (id) => {
         const proceed = window.confirm('Want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/inventory/${id}`
+            const url = `http://localhost:5000/myBooks/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
                 .then(data => {
-                    const remaining = books.filter(book => book._id !== id);
-                    setBooks(remaining);
+                    const remaining = myBooks.filter(book => book._id !== id);
+                    setMyBooks(remaining);
                 })
         }
     }
@@ -32,7 +31,7 @@ const ManageBook = () => {
                     fontWeight: "600",
                     textAlign: 'center',
                     fontSize: "30px",
-                }}>Manage books</h2>
+                }}>Managing My books</h2>
                 <Table striped bordered hover variant="dark">
                     <thead>
                         <tr>
@@ -46,7 +45,7 @@ const ManageBook = () => {
                     </thead>
                     <tbody>
                         {
-                            books.map(book=> {
+                            myBooks.map(book=> {
                                  return(
                                     <tr>
                                     <td> <FaHandPointRight/> </td>
@@ -76,4 +75,4 @@ const ManageBook = () => {
     );
 };
 
-export default ManageBook;
+export default ManageMyBooks;

@@ -1,36 +1,70 @@
-
-#footer{
+#footer {
     background-color: #000;
     color: #d1d1d1;
 }
-.footer_items{
+
+.footer_items {
     display: flex;
     justify-content: space-evenly;
 }
-.footer_text h3, .footer_link h3, .footer_info h3, .footer_subscribe h3{
+
+.footer_text h3,
+.footer_link h3,
+.footer_info h3,
+.footer_subscribe h3 {
     color: #d1d1d1;
     font-size: 25px;
     font-weight: 600;
     font-family: 'Source Sans Pro', sans-serif;
 }
-.footer_text p, .copy small{
+
+.footer_text p,
+.copy small {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 15px;
     padding-top: 20px;
     width: 280px;
 }
-.footer_link ul,li .footer_info ul,li{
+
+.footer_link ul,
+li .footer_info ul,
+li {
     list-style-type: none;
 }
-.footer_space{
+
+.footer_space {
     padding: 0px 10px;
 }
-#copy{
-    border-top: 1px  solid #BEAEE2;
+
+#copy {
+    border-top: 1px solid #BEAEE2;
     padding: 20px 0px;
 }
-#copy small{
+
+#copy small {
     display: inline-block;
     width: 100%;
+}
+
+.inputField input {
+    display: block;
+    border: 1px solid transparent;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: gold;
+}
+
+.social_icon a {
+    color: #000;
+    font-size: 18px;
+    padding: 8px 10px;
+    background-color: #CDF0EA;
+    margin: 0px 10px;
+    border-radius: 3px;
 }

@@ -52,10 +52,7 @@ const Topbar = () => {
                             }
                         <CustomLink to="/blog">
                             Blog
-                        </CustomLink>
-                        <CustomLink to="/about">
-                            About
-                        </CustomLink>
+                        </CustomLink>                       
                         <CustomLink to="/contact">
                             Contact
                         </CustomLink>

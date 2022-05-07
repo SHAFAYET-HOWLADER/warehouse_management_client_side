@@ -5,9 +5,9 @@ import { toast, ToastContainer } from 'react-toastify';
 const AddBook = () => {
 
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => {
+    const onSubmit = (data, event) => {
         console.log(data);
-        const url = 'http://localhost:5000/allBooks';
+        const url = 'http://localhost:5000/myBooks';
         fetch(url,{
             method: 'POST',
             headers: {
@@ -18,6 +18,7 @@ const AddBook = () => {
         .then(res=>res.json())
         .then(result=>{
            const proceed = window.confirm('Want to adding new book?');
+           event.target.reset();
            if(proceed){
                toast("Successfully added new book");
            }
