@@ -15,6 +15,7 @@ import InventoryDetails from './Inventory/InventoryDetails/InventoryDetails';
 import AddBook from './Components/Pages/AddBook/AddBook';
 import ManageBook from './Components/Pages/ManageBook/ManageBook';
 import RequireAuth from './RequireAuth/RequireAuth';
+import AllBooks from './Components/Pages/AllBooks/AllBooks';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/about' element={<About />}></Route>
+        <Route path='/allBooks' element={
+          <AllBooks/>
+        }></Route>
         <Route path='/blog' element={<Blog />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/home' element={<Home />}></Route>
@@ -32,7 +36,7 @@ function App() {
             <InventoryDetails />
           </RequireAuth>
         }></Route>
-        <Route path='/manageBooks' element={
+        <Route path='/ManageInventories' element={
           <RequireAuth>
             <ManageBook />
           </RequireAuth>

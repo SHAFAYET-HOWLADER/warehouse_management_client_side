@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
-import './DisplayBooks.css'
+import './DisplayBooks.css';
 const DisplayBooks = ({ book }) => {
     const { bookName, img, description, price, quantity, _id,supplierName } = book;
     const navigate = useNavigate()
@@ -21,6 +21,7 @@ const DisplayBooks = ({ book }) => {
                     <button onClick={() => navigateToDetails(_id)}>Update &nbsp; <FaArrowRight />  </button>
                 </div>
             </div>
+
         </section>
     );
 };

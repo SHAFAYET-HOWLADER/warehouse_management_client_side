@@ -28,33 +28,42 @@ const Topbar = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
                             <CustomLink to="/inventory">Inventory</CustomLink>
+                            <CustomLink to="/allBooks">All Books</CustomLink>
                         </Nav>
                         <Nav>
                             {
                                 user && <>
-                                    <CustomLink to="/addBook">Add Book</CustomLink>
-                                    <CustomLink to="/manageBooks">Manage</CustomLink>
+                                    <CustomLink to="/addBook">Add Books</CustomLink>
+                                    <CustomLink to="/manageInventories">Manage Book</CustomLink>
+                                    <CustomLink to="/myBooks">My Books</CustomLink>
                                 </>
-                            }
+                            }                          
                             {
                                 user ?
-                                    <button onClick={logout} >SignOut </button>
-                                    : <CustomLink to="/login">Login </CustomLink>
+                                    <button style={{
+                                        border: 'none',
+                                        borderRadius: '3px',
+                                        fontFamily: "'Montserrat', sans - serif",
+                                        backgroundColor: '#BEAEE2',
+                                        fontWeight: '600',
+                                        fontSize: '18px',
+                                    }} onClick={logout} >SignOut </button>
+                        : <CustomLink to="/login">Login </CustomLink>
                             }
-                            <CustomLink to="/blog">
-                                Blog
-                            </CustomLink>
-                            <CustomLink to="/about">
-                                About
-                            </CustomLink>
-                            <CustomLink to="/contact">
-                                Contact
-                            </CustomLink>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        </div>
+                        <CustomLink to="/blog">
+                            Blog
+                        </CustomLink>
+                        <CustomLink to="/about">
+                            About
+                        </CustomLink>
+                        <CustomLink to="/contact">
+                            Contact
+                        </CustomLink>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+        </div >
     );
 };
 

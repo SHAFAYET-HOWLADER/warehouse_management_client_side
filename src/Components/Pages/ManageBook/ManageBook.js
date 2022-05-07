@@ -2,8 +2,13 @@ import React from 'react';
 import { Table } from 'react-bootstrap';
 import useInventory from '../../../Hooks/useInventory';
 import { FaRegTrashAlt,FaArrowRight } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 const ManageBook = () => {
+    const navigate = useNavigate();
+    const navigateTomManageInventories = () => {
+        navigate('/addBook');
+    }
     const [books, setBooks] = useInventory();
     const handleDelete = (id) => {
         const proceed = window.confirm('Want to delete?');
@@ -53,6 +58,9 @@ const ManageBook = () => {
                         }      
                     </tbody>
                 </Table>
+                <div className='manage_button'>
+                    <button onClick={navigateTomManageInventories}>Add Items&nbsp;<FaArrowRight /> </button>
+                </div>
             </div>
         </section>
     );

@@ -6,14 +6,16 @@ import google from '../../../signIn_logo/google.png';
 import facebook from '../../../signIn_logo/facebook.png';
 import github from '../../../signIn_logo/github.png';
 import auth from '../../../firebase.init';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 const SocialLogin = () => {
     const navigate = useNavigate();
+    const location = useLocation();
     const [signInWithGoogle, user] = useSignInWithGoogle(auth);
     let [signInWithFacebook, user1] = useSignInWithFacebook(auth);
     let [signInWithGithub, user2] = useSignInWithGithub(auth);
+    const from = location.state?.from?.pathname || '/';
     if(user || user1 || user2){
-        navigate('/home');
+        navigate(from, {replace: true});
      }
     return (
         <div className='container'>
