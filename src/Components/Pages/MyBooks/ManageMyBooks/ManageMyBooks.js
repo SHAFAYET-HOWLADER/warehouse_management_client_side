@@ -12,7 +12,7 @@ const ManageMyBooks = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/myBooks/${id}`
+            const url = `https://desolate-peak-42134.herokuapp.com/myBooks/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

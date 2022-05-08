@@ -14,7 +14,7 @@ const MyBooksDetails = () => {
     const [book, setBook] = useState({})
     console.log(book)
     useEffect(() => {
-        fetch(`http://localhost:5000/myBooks/${myId}`)
+        fetch(`https://desolate-peak-42134.herokuapp.com/myBooks/${myId}`)
             .then(res => res.json())
             .then(data => setBook(data))
     }, [reLoad])
@@ -25,7 +25,7 @@ const MyBooksDetails = () => {
         const newQuantity = parseInt(quantity) + parseInt(book.quantity);
         console.log(quantity, newQuantity)
         const updatedQuantity = { newQuantity };
-        const url = `http://localhost:5000/myBooks/${myId}`
+        const url = `https://desolate-peak-42134.herokuapp.com/myBooks/${myId}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -45,7 +45,7 @@ const MyBooksDetails = () => {
     const reduceQuantity = () => {
         const quantity = book?.quantity;
         const updatedQuantity = { quantity }
-        const url = `http://localhost:5000/my/${myId}`
+        const url = `https://desolate-peak-42134.herokuapp.com/my/${myId}`
         fetch(url, {
             method: 'PUT',
             headers: {

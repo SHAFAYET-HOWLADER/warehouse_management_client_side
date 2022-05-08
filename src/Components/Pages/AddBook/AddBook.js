@@ -10,7 +10,7 @@ const AddBook = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data, event) => {
         console.log(data);
-        const url = 'http://localhost:5000/myBooks';
+        const url = 'https://desolate-peak-42134.herokuapp.com/myBooks';
         fetch(url,{
             method: 'POST',
             headers: {

@@ -11,7 +11,7 @@ const MyBooks = () => {
     const [myBooks, setMyBooks] = useState([]);
     useEffect(() => {
         const getMyBooks = async () => {
-            const url = `http://localhost:5000/myBooks`;
+            const url = `https://desolate-peak-42134.herokuapp.com/myBooks`;
             const { data } = await axios.get(url);
             setMyBooks(data)
         }

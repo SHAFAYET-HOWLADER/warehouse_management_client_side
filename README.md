@@ -22,5 +22,5 @@ their trust books in our warehouse.
 * Mobile Friendly : Projects is fully responsible and user friendly.Modern any android user can 
   browsing this website perfectly.   
   
-# This project was deployed as name [Book Lover] and it's live link is here (https://github.com/facebook/create-react-app).
+# This project was deployed as name [Book Lover] and it's live link is here (https://warehouseactivity-da4ea.web.app/).https://warehouseactivity-da4ea.web.app/
 

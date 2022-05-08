@@ -14,7 +14,7 @@ const InventoryDetails = () => {
     const [reLoad, setReload] = useState(false);
     const [book, setBook] = useState({})
     useEffect(() => {
-        fetch(`http://localhost:5000/inventory/${inventoryId}`)
+        fetch(`https://desolate-peak-42134.herokuapp.com/inventory/${inventoryId}`)
             .then(res => res.json())
             .then(data => setBook(data))
     }, [reLoad])
@@ -25,7 +25,7 @@ const InventoryDetails = () => {
         const newQuantity = parseInt(quantity) + parseInt(book?.quantity);
         console.log(quantity, newQuantity)
         const updatedQuantity = { newQuantity };
-        const url = `http://localhost:5000/book/${inventoryId}`
+        const url = `https://desolate-peak-42134.herokuapp.com/book/${inventoryId}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -45,7 +45,7 @@ const InventoryDetails = () => {
     const reduceQuantity = () => {
         const quantity = book?.quantity;
         const updatedQuantity = { quantity }
-        const url = `http://localhost:5000/inventory/${inventoryId}`
+        const url = `https://desolate-peak-42134.herokuapp.com/inventory/${inventoryId}`
         fetch(url, {
             method: 'PUT',
             headers: {
