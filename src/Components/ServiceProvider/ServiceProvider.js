@@ -6,31 +6,30 @@ const ServiceProvider = () => {
     return (
         <section id="serviceProvider">
             <div className='container'>
-      
-                   <div className='d-flex'>
-                   <div className='col-lg-6'>
-                       <div className='serviceProvider_left section_space'>
-                       <h3>
+
+                <div className='serviceProvider_parent'>
+
+                    <div className='serviceProvider_left section_space'>
+                        <h3>
                             At <span>Warehouse</span>, we provide a unique solution for warehousing space for business and consumers
                         </h3>
                         <p>
-                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+                            Warehousing is the process of storing physical inventory for sale or distribution.It ensures price stability and the mitigation of revenue losses. Seasonal demand for products enables warehouses to play a vital role in the supply chain. Warehouses are used by all different types of businesses that need to temporarily store products in bulk before either shipping them to other locations or individually to end consumers.
                         </p>
                         <button>
-                           Read More
-                           &nbsp;
-                           <FaArrowRight/>
+                            Read More
+                            &nbsp;
+                            <FaArrowRight />
                         </button>
-                       </div>
+
                     </div>
-                    <div className='col-lg-6'>
-                        <div className='serviceProvider_right section_space'>
-                          <img className='img-fluid w-100' src={section_img} alt='img'/>
-                        </div>
+
+                    <div className='serviceProvider_right section_space'>
+                        <img className='img-fluid w-100' src={section_img} alt='img' />
                     </div>
-                   </div>
-          
+
+                </div>
+
             </div>
         </section>
     );

@@ -18,70 +18,60 @@ const OurServices = () => {
                         supply chain operations and services
                     </p>
                 </div>
-              
-                    <div className='service_items d-flex  justify-content-center'>
-                        <div className='col-lg-3'>
-                            <div className='services_img'>
-                                <img className='img-fluid w-' src={service_one} alt='img' />
-                                <div className='img_text text-center'>
-                                    <h3>
-                                        On-Demand Warehousing Space Services
-                                    </h3>
-                                    <button>
-                                        More-Info
-                                        &nbsp;
-                                        <FaArrowRight />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-lg-3'>
-                            <div className='services_img'>
-                                <img className='img-fluid w-100' src={service_two} alt='img' />
-                                <div className='img_text text-center'>
-                                    <h3>
-                                        Kitting, Packing and Other Customized Operation
-                                    </h3>
-                                    <button>
-                                        More-Info
-                                        &nbsp;
-                                        <FaArrowRight />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-lg-3'>
-                            <div className='services_img'>
-                                <img className='img-fluid w-100' src={service_three} alt='img' />
-                                <div className='img_text text-center'>
-                                    <h3>
-                                        Distribution and Reverse Logistics
-                                    </h3>
-                                    <button>
-                                        More-Info
-                                        &nbsp;
-                                        <FaArrowRight />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-lg-3'>
-                            <div className='services_img'>
-                                <img className='img-fluid w-100' src={service_four} alt='img' />
-                                <div className='img_text text-center'>
-                                    <h3>
-                                        Value Added Services
-                                    </h3>
-                                    <button>
-                                        More-Info
-                                        &nbsp;
-                                        <FaArrowRight />
-                                    </button>
-                                </div>
-                            </div>
+                <div className='service_items'>
+                    <div className='services_img'>
+                        <img className='img-fluid w-' src={service_one} alt='img' />
+                        <div className='img_text text-center'>
+                            <h3>
+                                On-Demand Warehousing Space Services
+                            </h3>
+                            <button>
+                                More-Info
+                                &nbsp;
+                                <FaArrowRight />
+                            </button>
                         </div>
                     </div>
-               
+                    <div className='services_img'>
+                        <img className='img-fluid w-100' src={service_two} alt='img' />
+                        <div className='img_text text-center'>
+                            <h3>
+                                Kitting, Packing and Other Customized Operation
+                            </h3>
+                            <button>
+                                More-Info
+                                &nbsp;
+                                <FaArrowRight />
+                            </button>
+                        </div>
+                    </div>
+                    <div className='services_img'>
+                        <img className='img-fluid w-100' src={service_three} alt='img' />
+                        <div className='img_text text-center'>
+                            <h3>
+                                Distribution and Reverse Logistics
+                            </h3>
+                            <button>
+                                More-Info
+                                &nbsp;
+                                <FaArrowRight />
+                            </button>
+                        </div>
+                    </div>
+                    <div className='services_img'>
+                        <img className='img-fluid w-100' src={service_four} alt='img' />
+                        <div className='img_text text-center'>
+                            <h3>
+                                Value Added Services
+                            </h3>
+                            <button>
+                                More-Info
+                                &nbsp;
+                                <FaArrowRight />
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );

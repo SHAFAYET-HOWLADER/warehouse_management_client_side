@@ -1,7 +1,7 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 import useInventory from '../../../Hooks/useInventory';
-import { FaRegTrashAlt,FaArrowRight,FaHandPointRight } from 'react-icons/fa';
+import { FaRegTrashAlt, FaArrowRight, FaHandPointRight } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 const ManageBook = () => {
@@ -46,26 +46,28 @@ const ManageBook = () => {
                     </thead>
                     <tbody>
                         {
-                            books.map(book=> {
-                                 return(
-                                    <tr>
-                                    <td> <FaHandPointRight/> </td>
-                                    <td>{book.bookName}</td>
-                                    <td>{book.supplierName}</td>
-                                    <td>{book.quantity}</td>
-                                    <td>{book.price}</td>
-                                    <td onClick={() => handleDelete(book._id)}>
-                                      <div style={{
-                                          color: 'red',
-                                          cursor: "pointer"
-                                      }}>
-                                       <FaRegTrashAlt/>
-                                      </div>
-                                    </td>
-                                </tr>              
-                                 )
+                            books.map(book => {
+                                return (
+                                
+                                        <tr key={book._id}>
+                                            <td> <FaHandPointRight /> </td>
+                                            <td>{book.bookName}</td>
+                                            <td>{book.supplierName}</td>
+                                            <td>{book.quantity}</td>
+                                            <td>{book.price}</td>
+                                            <td onClick={() => handleDelete(book._id)}>
+                                                <div style={{
+                                                    color: 'red',
+                                                    cursor: "pointer"
+                                                }}>
+                                                    <FaRegTrashAlt />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    
+                                )
                             })
-                        }      
+                        }
                     </tbody>
                 </Table>
                 <div className='manage_button'>

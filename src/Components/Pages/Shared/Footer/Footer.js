@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className='footer_text footer_space'>
                         <h3>About</h3>
                         <p>
-                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+                        A warehouse is a facility that, along with storage racks, handling equipment and personnel and management resources, allows us to control the differences between the incoming flow of goods (received from suppliers, production centers, etc.) and the outgoing flow of goods (goods being sent to production, sales, etc.).
                         </p>
                     </div>
                     <div className='footer_link footer_space'>

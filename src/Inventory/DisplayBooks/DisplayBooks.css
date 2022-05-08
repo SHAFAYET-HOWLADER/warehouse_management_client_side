@@ -52,3 +52,20 @@
     box-shadow: 9px 9px 22px -16px #000;
     transition: all linear .4s;
   }
+  /*--------------apply media query-------------*/
+  @media (min-width: 992px) and (max-width: 1199px){
+    .displayBooks small{
+        width: 100%; 
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+    .displayBooks small{
+        width: 100%; 
+    }
+}
+@media (max-width: 575.98px){
+    .displayBooks small{
+        width: 100%; 
+    }
+}
+/*--------------apply media query-------------*/
