@@ -18,6 +18,7 @@ const ManageMyBooks = () => {
             })
                 .then(res => res.json())
                 .then(data => {
+                    console.log(data)
                     const remaining = myBooks.filter(book => book._id !== id);
                     setMyBooks(remaining);
                 })
@@ -46,8 +47,10 @@ const ManageMyBooks = () => {
                     <tbody>
                         {
                             myBooks.map(book=> {
+                               
                                  return(
-                                    <tr>
+                                  
+                                    <tr key={book._id}>
                                     <td> <FaHandPointRight/> </td>
                                     <td>{book.bookName}</td>
                                     <td>{book.supplierName}</td>
